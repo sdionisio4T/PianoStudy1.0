@@ -1,0 +1,6 @@
+const { createClient } = supabase;
+
+const SUPABASE_URL = 'https://mtejpgwjdhzuqrqfdlud.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im10ZWpwZ3dqZGh6dXFycWZkbHVkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEzNjA4OTAsImV4cCI6MjA4NjkzNjg5MH0.4s_Mo_PFxu7CF81nyDKs72DjvpUEt3huTobOvGymlko';
+
+export const db = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
